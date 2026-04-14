@@ -1,0 +1,75 @@
+akhila_nori@Akhilas-MacBook-Air 01_basics % ls 
+__pycache__     chai.py         hello_world.py
+akhila_nori@Akhilas-MacBook-Air 01_basics % python3
+Python 3.14.4 (v3.14.4:23116f998f6, Apr  7 2026, 09:45:22) [Clang 17.0.0 (clang-1700.6.4.2)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("chai")
+chai
+>>> 2*2
+4
+>>> 2*I
+Traceback (most recent call last):
+  File "<python-input-2>", line 1, in <module>
+    2*I
+      ^
+NameError: name 'I' is not defined
+>>> "chai"*4
+'chaichaichaichai'
+>>> "chai\t"*4
+'chai\tchai\tchai\tchai\t'
+>>> "chai"\t*4
+  File "<python-input-5>", line 1
+    "chai"\t*4
+           ^
+SyntaxError: unexpected character after line continuation character
+>>> score = 100
+>>> score
+100
+>>> tea
+Traceback (most recent call last):
+  File "<python-input-8>", line 1, in <module>
+    tea
+NameError: name 'tea' is not defined
+>>> clear
+>>> import os
+>>> os.getcwd()
+'/Users/akhila_nori/Documents/Python/01_basics'
+>>> for c in "akhila":
+...         print(c)
+...         
+a
+k
+h
+i
+l
+a
+>>> import sys
+>>> sys.platform
+'darwin'
+>>> import hello_world
+Hello Akhila Nori
+4
+Leomon Tea
+>>> hello_world.chai("mint tea")
+mint tea
+>>> hello_world.chai_one
+Traceback (most recent call last):
+  File "<python-input-16>", line 1, in <module>
+    hello_world.chai_one
+AttributeError: module 'hello_world' has no attribute 'chai_one'
+>>> hello_world.chai_one
+Traceback (most recent call last):
+  File "<python-input-17>", line 1, in <module>
+    hello_world.chai_one
+AttributeError: module 'hello_world' has no attribute 'chai_one'
+>>> from importlib import reload
+>>> reload(hello_world)
+Hello Akhila Nori
+4
+Leomon Tea
+<module 'hello_world' from '/Users/akhila_nori/Documents/Python/01_basics/hello_world.py'>
+>>> hello_world.chai_one
+'lemon tea'
+>>> hello_world.chai_three
+'masala chai'
+>>> 
